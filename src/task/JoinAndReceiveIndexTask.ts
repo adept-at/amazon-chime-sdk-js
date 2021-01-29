@@ -101,8 +101,8 @@ export default class JoinAndReceiveIndexTask extends BaseTask {
       this.taskCanceler = interceptor;
 
       // Allow max videos to be overridden
-      if (window.chimeMaxVideos) {
-	this.maxVideos = window.chimeMaxVideos;
+      if ((window as any).chimeMaxVideos) {
+          this.maxVideos = (window as any).chimeMaxVideos;
       }
 
       this.context.signalingClient.join(new SignalingClientJoin(this.maxVideos, true));
