@@ -79,10 +79,6 @@
     "ua-parser-js": "^0.7.22"
   },
   "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aws/amazon-chime-sdk-js"
-  },
   "nyc": {
     "include": [
       "src/**/*.ts"
